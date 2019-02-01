@@ -1,1 +1,1 @@
-WORK IN PROGRESS
+<h3>GitHub Profile Search Bar</h3>
