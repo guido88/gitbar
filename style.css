@@ -1,0 +1,67 @@
+body {
+
+	background-image: url("github.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.main {
+
+	width: 1000px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+}
+
+#container {
+
+	background-color: blue;
+	width: 265px; 
+
+}
+
+#git-user {
+
+  width: 100%;
+
+
+}
+
+.information {
+
+	position: absolute;
+	width: 400px;
+	background-color: yellow;
+	left: 50%;
+	top: 30%;
+}
+
+
+.information span{
+	display: block;
+}
+
+.information img{
+	width: 100px;
+	height: 100px;
+	
+}
+
+.git-search-list {
+ 
+width: 165px; 
+
+
+}
+
+.div-user {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width:100%;
+	background-color: seashell;
+}
+
+.div-user:hover{
+	background-color: orange;
+}
