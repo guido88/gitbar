@@ -1,0 +1,10 @@
+
+export default
+{
+  // my json here...
+  "config" : {
+
+		"CLIENT_ID": "Iv1.e39651f823cce1c7",
+		"CLIENT_SECRET": "c3aaf3585174b2f2f9b1c82dae1e0dae539c1d25"
+	}
+}

@@ -1,10 +1,14 @@
+
 const searchButton = document.querySelector(".git-button");
 const inputValue = document.querySelector("#git-user");
 const resultList = document.querySelector(".git-search-list");
 const information = document.querySelector(".information");
-
 const client_secret = "c3aaf3585174b2f2f9b1c82dae1e0dae539c1d25";
 const client_id = "Iv1.e39651f823cce1c7";
+
+
+
+
 
 const getUsers = async (user) => {
 
@@ -25,7 +29,7 @@ const showData = () => {
 };
 
 
-inputValue.addEventListener("input", () => {
+inputValue.addEventListener("input", _.debounce(() => {
 		
 	if(inputValue.value.length>1){
 		getUsers(inputValue.value).then((res) =>{
@@ -47,7 +51,7 @@ inputValue.addEventListener("input", () => {
 
 	}); }
 
-});
+},800));
 
 
 const createDivUser = (user) => {
