@@ -1,4 +1,4 @@
-//test s
+//test
 const searchButton = document.querySelector(".git-button");
 const inputValue = document.querySelector("#git-user");
 const resultList = document.querySelector(".git-search-list");
