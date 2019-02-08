@@ -3,16 +3,13 @@ const searchButton = document.querySelector(".git-button");
 const inputValue = document.querySelector("#git-user");
 const resultList = document.querySelector(".git-search-list");
 const information = document.querySelector(".information");
-const client_secret = "c3aaf3585174b2f2f9b1c82dae1e0dae539c1d25";
-const client_id = "Iv1.e39651f823cce1c7";
 
+import config from "./config.js";
 
-
-
-
+ 
 const getUsers = async (user) => {
 
-	const api_call = await fetch(`https://api.github.com/search/users?q=${user}&client_id=${client_id}&client_secret=${client_secret}`);
+	const api_call = await fetch(`https://api.github.com/search/users?q=${user}&client_id=${config.client_id}&client_secret=${config.client_secret}`);
 
 	const data = await api_call.json();
 
@@ -42,8 +39,9 @@ inputValue.addEventListener("input", _.debounce(() => {
 				div.addEventListener("click", () =>{
 					information.innerHTML="";
 					information.appendChild(createImg(user.avatar_url));
-					information.appendChild(createInfoUser(user.login));
-					information.appendChild(createInfoUser(user.html_url));
+					information.appendChild(createInfoUser("Username: "+user.login));
+					information.appendChild(createInfoUrl(user.html_url));
+					information.classList.remove("toggle");
 				});
 
 				resultList.appendChild(div);
@@ -68,6 +66,22 @@ const createInfoUser = (info) => {
 	let span = document.createElement("span");
 	span.innerHTML = info;
 
+	return span;
+};
+
+
+const createInfoUrl = (info) => {
+	
+	let span = document.createElement("span");
+	span.innerHTML="Github URL: ";
+
+	let a = document.createElement("a");
+	a.setAttribute("href",info);
+	a.innerHTML=info;
+
+	a.setAttribute("target","_blank");
+
+	span.appendChild(a);
 	return span;
 };
 
