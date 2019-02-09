@@ -1,8 +1,6 @@
 <h3>GitHub Profile Search Bar</h3>
 
-
-github-search
-A github users search component
+<p>In order the application to work you need to get the client_id and client_secret tokens by registering the application on Github (Settings>Developer Settings>Github Apps)</p>
 
 <h2>Getting started</h2>
 <ul>
