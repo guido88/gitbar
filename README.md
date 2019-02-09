@@ -1,6 +1,6 @@
 <h3>GitHub Profile Search Bar</h3>
 
-<p>In order the application to work you need to get the client_id and client_secret tokens by registering the application on Github (Settings>Developer Settings>Github Apps)</p>
+<p>In order the application to work you need to get the client_id and client_secret tokens by registering the application on Github (Settings>Developer Settings>Github Apps) and then replace them in the git-app.js file</p>
 
 <h2>Getting started</h2>
 <ul>
