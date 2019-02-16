@@ -6,6 +6,7 @@
 <ul>
 <li>Clone or download this repository
 <li>run npm install
+<li>run npm install -g live-server
 <li>run npm run build
 <li>run npm start
-<li>Have fun!</ul>
+
